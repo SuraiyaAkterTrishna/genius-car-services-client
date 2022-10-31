@@ -11,6 +11,7 @@ const Services = () => {
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
+  
   return (
     <Container fluid>
       <h1 className="text-primary text-center text-uppercase my-5">Our Services</h1>
