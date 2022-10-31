@@ -14,7 +14,7 @@ const Experts = () => {
   return (
     <Container fluid>
       <h1 className="text-primary text-center text-uppercase my-5">
-        Our Experts: {experts.length}
+        Our Experts
       </h1>
       <Row className="gy-5">
         {experts.map((expert) => (
