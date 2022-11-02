@@ -5,6 +5,9 @@ import Card from 'react-bootstrap/Card';
 
 const Service = ({ service }) => {
   const { id, img, name, description, price } = service;
+  const navigateToServiceDetail = (id) => {
+    
+  }
   return (
     <Container>
       <Card>
