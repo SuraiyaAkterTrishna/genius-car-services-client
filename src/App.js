@@ -6,6 +6,7 @@ import Services from './Pages/Services/Services';
 import Footer from './Pages/Shared/Footer/Footer';
 import Experts from './Pages/Experts/Experts';
 import ServiceDetail from './Pages/ServiceDetail/ServiceDetail';
+import NotFound from './Pages/Shared/NotFound/NotFound';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/service' element={<Services></Services>}></Route>
         <Route path='/service/:serviceId' element={<ServiceDetail></ServiceDetail>}></Route>
         <Route path='/expert' element={<Experts></Experts>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
