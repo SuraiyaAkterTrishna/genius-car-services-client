@@ -5,15 +5,16 @@ import { Link, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 
 const Login = () => {
+  const emailRef = useRef('');
+  const passwordRef = useRef('');
+  const navigate = useNavigate();
+
   const [
     signInWithEmailAndPassword,
     user,
     loading,
     error,
   ] = useSignInWithEmailAndPassword(auth);
-  const emailRef = useRef('');
-  const passwordRef = useRef('');
-  const navigate = useNavigate();
 
   const handleSubmit = event => {
     event.preventDefault();
