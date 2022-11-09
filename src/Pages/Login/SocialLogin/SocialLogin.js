@@ -1,4 +1,7 @@
 import React from 'react';
+import google from '../../../images/Social logo/google.png';
+import facebook from '../../../images/Social logo/facebook.png';
+import github from '../../../images/Social logo/github.png';
 
 const SocialLogin = () => {
     return (
@@ -9,7 +12,18 @@ const SocialLogin = () => {
                 <div style={{height: "1px"}} className='bg-primary w-50'></div>
             </div>
             <div>
-                <button className='btn btn-primary w-50'>Google Sign in</button>
+                <button className='btn btn-info text-white w-35 me-2 my-2'>
+                    <img style={{width: "25px"}} src={google} />
+                    <span className='px-2'>Google</span>
+                </button>
+                <button className='btn btn-info text-white w-35 me-2 my-2'>
+                    <img style={{width: "25px"}} src={facebook} />
+                    <span className='px-2'>Facebook</span>
+                </button>
+                <button className='btn btn-info text-white w-35 my-2'>
+                    <img style={{width: "25px"}} src={github} />
+                    <span className='px-2'>GitHub</span>
+                </button>
             </div>
         </div>
     );

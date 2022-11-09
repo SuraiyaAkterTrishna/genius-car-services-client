@@ -49,7 +49,7 @@ const Login = () => {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicCheckbox"></Form.Group>
-        <Button onClick={handleSubmit} variant="primary" type="submit">
+        <Button className="w-100" onClick={handleSubmit} variant="primary" type="submit">
           Submit
         </Button>
       </Form>
