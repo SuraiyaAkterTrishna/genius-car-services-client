@@ -48,9 +48,8 @@ const Login = () => {
             required
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox"></Form.Group>
         <Button className="w-100" onClick={handleSubmit} variant="primary" type="submit">
-          Submit
+          Login
         </Button>
       </Form>
       <p>
