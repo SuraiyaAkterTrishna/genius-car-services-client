@@ -7,13 +7,15 @@ import SocialLogin from "./SocialLogin/SocialLogin";
 import { useState } from "react";
 
 const Register = () => {
+  const [agree, setAgree] = useState(false);
+  
   const [createUserWithEmailAndPassword, user] =
     useCreateUserWithEmailAndPassword(auth);
   const navigate = useNavigate();
   const navigateLogin = () => {
     navigate("/login");
   };
-  const [agree, setAgree] = useState(false);
+  
   const handleRegister = (event) => {
     event.preventDefault();
     // const name = event.target.name.value;
